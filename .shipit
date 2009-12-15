@@ -1,5 +1,7 @@
 # auto-generated shipit config file.
-steps = FindVersion, ChangeVersion, CheckChangeLog, Manifest, DistTestExtra, Commit, Tag, MakeDist, DistClean
+steps = FindVersion, ChangeVersion, CheckChangeLog, Manifest, DistTestExtra, Commit, Tag, MakeDist, DistClean, UploadCPAN, Twitter
 
 git.tagpattern = v%v
-gitpush_to = origin
+git.push_to = origin
+
+twitter.config = ~/.twitterrc
