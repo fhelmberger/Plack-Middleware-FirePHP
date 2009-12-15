@@ -1,0 +1,5 @@
+# auto-generated shipit config file.
+steps = FindVersion, ChangeVersion, CheckChangeLog, Manifest, DistTestExtra, Commit, Tag, MakeDist, DistClean
+
+git.tagpattern = v%v
+gitpush_to = origin
